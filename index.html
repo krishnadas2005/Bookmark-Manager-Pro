@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Bookmark Manager Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>🔖 Bookmark Manager Pro</h1>
+
+<div class="controls">
+
+<input id="search" placeholder="Search bookmarks">
+
+<button onclick="toggleDark()">🌙</button>
+
+<button onclick="exportBookmarks()">Export</button>
+
+<input type="file" id="importFile">
+
+</div>
+
+</header>
+
+<section class="addForm">
+
+<input id="name" placeholder="Website name">
+<input id="url" placeholder="https://example.com">
+
+<button onclick="addBookmark()">Add Bookmark</button>
+
+</section>
+
+<div id="bookmarkGrid"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

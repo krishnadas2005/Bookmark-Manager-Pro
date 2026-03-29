@@ -1,0 +1,215 @@
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+/* Body */
+
+body{
+background: linear-gradient(135deg,#4f46e5,#3b82f6,#06b6d4);
+min-height:100vh;
+color:#333;
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+header h1{
+color:white;
+font-size:26px;
+letter-spacing:1px;
+}
+
+/* Controls */
+
+.controls{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+/* Inputs */
+
+input{
+padding:10px 14px;
+border:none;
+border-radius:8px;
+outline:none;
+font-size:14px;
+}
+
+/* Search input */
+
+#search{
+width:220px;
+background:white;
+}
+
+/* File input */
+
+#importFile{
+background:white;
+padding:8px;
+border-radius:8px;
+}
+
+/* Buttons */
+
+button{
+padding:10px 16px;
+border:none;
+border-radius:8px;
+background:#6366f1;
+color:white;
+font-weight:500;
+cursor:pointer;
+transition:all 0.25s ease;
+}
+
+button:hover{
+background:#4f46e5;
+transform:translateY(-2px);
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Add Form */
+
+.addForm{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:12px;
+margin:30px auto;
+padding:20px;
+width:80%;
+background:white;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.addForm input{
+flex:1;
+border:1px solid #ddd;
+}
+
+/* Bookmark Grid */
+
+#bookmarkGrid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:25px;
+padding:40px;
+}
+
+/* Bookmark Card */
+
+.bookmark{
+background:white;
+padding:18px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:all 0.25s ease;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.bookmark:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Bookmark Title */
+
+.bookmark a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+font-size:16px;
+}
+
+/* Favicon */
+
+.bookmark img{
+margin-right:8px;
+vertical-align:middle;
+}
+
+/* Actions */
+
+.actions{
+margin-top:15px;
+display:flex;
+justify-content:space-between;
+}
+
+.actions button{
+padding:6px 10px;
+font-size:13px;
+}
+
+/* Dark Mode */
+
+.dark{
+background:#0f172a;
+color:white;
+}
+
+.dark header{
+background:#1e293b;
+}
+
+.dark .addForm{
+background:#1e293b;
+}
+
+.dark .bookmark{
+background:#1e293b;
+}
+
+.dark input{
+background:#334155;
+color:white;
+}
+
+.dark button{
+background:#6366f1;
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.controls{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.addForm{
+flex-direction:column;
+width:90%;
+}
+
+#search{
+width:160px;
+}
+
+}
