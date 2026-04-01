@@ -2,16 +2,24 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bookmark Manager Pro</title>
+
+<link rel="icon" type="image/png" href="icon.png">
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
-<h1>🔖 Bookmark Manager Pro</h1>
+<h1 class="logo">🔖 Bookmark Manager Pro</h1>
 
 <div class="controls">
 
@@ -27,16 +35,24 @@
 
 </header>
 
+
+<main>
+
 <section class="addForm">
 
 <input id="name" placeholder="Website name">
+
 <input id="url" placeholder="https://example.com">
 
 <button onclick="addBookmark()">Add Bookmark</button>
 
 </section>
 
-<div id="bookmarkGrid"></div>
+
+<section id="bookmarkGrid"></section>
+
+</main>
+
 
 <script src="script.js"></script>
 
